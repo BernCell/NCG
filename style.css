@@ -21,7 +21,7 @@
 header {
   display: flex;
   position: relative;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   position: fixed;
   z-index: 999;
@@ -55,12 +55,10 @@ header .nav-elements {
 }
 
 header .brand {
-  padding: 1rem;
-  font-size: 1.5em;
+  /* padding: 1rem; */
+  /* font-size: 1.5em; */
   font-weight: 500;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  /* color: rgb(224, 133, 13); */
-  /* background: rgb(224, 133, 13); */
+  margin-left: -150px;
   /* padding: 2rem; */
   transition: transform 0.3s ease-in-out;
   
@@ -96,13 +94,13 @@ header .brand:hover, .brand:hover span{
 header .nav-elements ul {
   display: flex;
   align-items: center;
-  padding: 3rem;
+  /* padding: 3rem; */
   justify-content: space-around;
 }
 
 header .nav-elements li {
   display: flex;
-  padding: 3rem;
+  padding: 2rem;
   list-style: none;
   justify-content: space-around;
 }
