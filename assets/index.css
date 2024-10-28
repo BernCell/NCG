@@ -3,6 +3,23 @@
   src: url("f52d3ba10c48f120aac7151517915276.eot"); /* IE9*/
   src: url("f52d3ba10c48f120aac7151517915276.eot?#iefix") format("embedded-opentype"), url("f52d3ba10c48f120aac7151517915276.woff2") format("woff2"), url("f52d3ba10c48f120aac7151517915276.woff") format("woff"), url("f52d3ba10c48f120aac7151517915276.ttf") format("truetype"), url("f52d3ba10c48f120aac7151517915276.svg#DIN Next Slab W01 Black") format("svg"); /* iOS 4.1- */
 }
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "DIN Next Slab W01 Black";
+}
+
+/* **************** BODY *********************** */
+body {
+  min-height: 110vh;
+  /* max-width: 300px; */
+  background-color: rgba(22, 22, 22, 0.055);
+  /* opacity: 0.8; */
+}
+
 /* **************** NAV *********************** */
 header {
   display: -webkit-box;
@@ -600,4 +617,28 @@ section {
     padding-top: 150px;
     /* display: none; */
   }
+}
+/* **************** FOOTER *********************** */
+.footer {
+  background: #161600;
+  color: #fff;
+  text-align: center;
+  padding: 2em;
+}
+
+.footer .footer-title {
+  color: rgb(224, 133, 13);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.footer p {
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.footer p a {
+  color: #8d8101;
+  font-weight: 600;
+  text-decoration: none;
 }/*# sourceMappingURL=index.css.map */

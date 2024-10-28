@@ -25,3 +25,20 @@ $black: rgb(22, 22, 22);
 $black2: rgb(20, 12, 1) 1px 1px 1px;
 $black3: rgb(26, 24, 24);
 $black4: rgba(22, 22, 22, 0.055);
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "DIN Next Slab W01 Black";
+}
+
+/* **************** BODY *********************** */
+
+body {
+    min-height: 110vh;
+    /* max-width: 300px; */
+    background-color: rgba(22, 22, 22, 0.055);
+    /* opacity: 0.8; */
+}

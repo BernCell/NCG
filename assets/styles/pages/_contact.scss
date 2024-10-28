@@ -1,0 +1,84 @@
+/* **************** CONTACT *********************** */
+
+.contact .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-left: -170px;
+    max-width: 900px;
+}
+
+.contact .content .row {
+    display: flex;
+    justify-content: center;
+
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.contact .content .row .card {
+    width: 300px;
+    height: 180px;
+    margin: 10px;
+
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+}
+
+.contact .content .row .card .contact-icon {
+    color: #f4a33ad0;
+    font-size: 3em;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.contact .content .row .card:hover .contact-icon {
+    transform: translateY(-10px);
+}
+
+.contact .content .row .card .info {
+    text-align: center;
+}
+
+.contact .content .row .card .info h3 {
+    color: #111;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+.contact .content .row .card .info span {
+    color: rgb(95, 94, 94);
+    font-weight: 500;
+}
+
+/*********Responsive*******/
+
+@media (max-width: 740px) {
+    .contact .content .row .card {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 620px) {
+    /******CONTACT < 620 ****************/
+
+    .contact .content .row .card {
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* ******* CONTACT < 520px**************** */
+
+    .contact .content .row .card {
+        margin-left: 170px;
+    }
+}
