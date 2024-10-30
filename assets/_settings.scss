@@ -1,3 +1,15 @@
+//Fonts
+@font-face {
+    font-family: "DIN Next Slab W01 Black";
+    src: url("f52d3ba10c48f120aac7151517915276.eot"); /* IE9*/
+    src:
+        url("f52d3ba10c48f120aac7151517915276.eot?#iefix") format("embedded-opentype"),
+        /* IE6-IE8 */ url("f52d3ba10c48f120aac7151517915276.woff2") format("woff2"),
+        /* chrome、firefox */ url("f52d3ba10c48f120aac7151517915276.woff") format("woff"),
+        /* chrome、firefox */ url("f52d3ba10c48f120aac7151517915276.ttf") format("truetype"),
+        /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+            url("f52d3ba10c48f120aac7151517915276.svg#DIN Next Slab W01 Black") format("svg"); /* iOS 4.1- */
+}
 // variables
 $color1: rgb(46, 27, 3);
 $color2: #b4b3ad;
@@ -13,3 +25,20 @@ $black: rgb(22, 22, 22);
 $black2: rgb(20, 12, 1) 1px 1px 1px;
 $black3: rgb(26, 24, 24);
 $black4: rgba(22, 22, 22, 0.055);
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+    font-family: "DIN Next Slab W01 Black";
+}
+
+/* **************** BODY *********************** */
+
+body {
+    min-height: 110vh;
+    /* max-width: 300px; */
+    background-color: rgba(22, 22, 22, 0.055);
+    /* opacity: 0.8; */
+}

@@ -1,0 +1,209 @@
+/* **************** NAV *********************** */
+header {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 999;
+    background-color: rgb(22, 22, 22);
+    padding: 15px 200px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: 0.5s ease;
+}
+
+header.sticky {
+    padding: 10px 200px;
+    background-color: rgb(46, 27, 3);
+    opacity: 0.7;
+}
+
+header .nav-container {
+    height: 10vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+}
+
+header .nav-elements {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* padding: 10px; */
+    /* font-size : 1.3vw; */
+}
+
+header .brand {
+    /* padding: 1rem; */
+    /* font-size: 1.5em; */
+
+    font-weight: 500;
+    margin-left: -100px;
+    /* padding: 2rem; */
+    transition: transform 0.3s ease-in-out;
+}
+
+header .brand a:visited {
+    color: rgb(245, 238, 235);
+    /* color: rgb(224, 133, 13); */
+}
+
+header .brand a {
+    text-decoration: none;
+}
+
+header .brand a #group {
+    color: #b4b3ad;
+}
+
+header .brand:hover,
+.brand:hover span {
+    text-decoration: none;
+    /* background: rgb(224, 133, 13); */
+    /* color: rgb(26, 24, 24); */
+    cursor: pointer;
+    /* color: rgb(22, 22, 22); */
+    /* background-color: rgba(245, 245, 245, 0.267); */
+    transform: scale(1.1);
+    color: rgb(224, 133, 13);
+}
+
+.menu-btn {
+    opacity: 0;
+}
+
+header .nav-elements ul {
+    display: flex;
+
+    align-items: center;
+    /* padding: 3rem; */
+    justify-content: space-around;
+}
+
+header .nav-elements li {
+    /* flex-wrap: wrap; */
+    display: flex;
+    padding: 1rem;
+    list-style: none;
+    justify-content: space-around;
+}
+
+header .nav-elements a {
+    /* flex: 1; */
+    font-size: calc(1vw + 5px);
+    text-decoration: none;
+    justify-content: space-around;
+    align-items: center;
+    color: rgb(245, 238, 235);
+    padding: 1.8rem;
+    transition: all 0.2s ease-in-out;
+    /* margin-left: 30px; */
+}
+
+/* header .nav-elements img{
+  
+    height: 20px;
+      width: 20px;
+  } */
+
+header .nav-elements a:hover {
+    transform: scale(1.4);
+    color: rgb(224, 133, 13);
+}
+
+header.sticky .nav-elements a:hover {
+    transform: scale(1.4);
+    color: rgb(224, 133, 13);
+    text-shadow: rgb(20, 12, 1) 1px 1px 1px;
+}
+
+@media (max-width: 1120px) {
+    /**************NAV ******************/
+
+    header .brand {
+        /* margin-left: -100px; */
+        padding: 0.9rem;
+        /* font-weight: 400; */
+        font-size: 0.9rem;
+    }
+
+    header .nav-elements {
+        display: none;
+    }
+
+    .menu-btn {
+        opacity: 1;
+        color: #7a7966;
+        background-size: 30px;
+        background-position: center;
+        width: 150px;
+        height: 50px;
+        right: 0;
+        margin-top: 30px;
+        margin-left: 250px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+    .side-bar {
+        opacity: 0;
+
+        text-decoration: none;
+        width: 300px;
+        background-color: #111;
+    }
+
+    .open {
+        opacity: 1;
+        transition: 0.5s ease-in-out;
+    }
+
+    header .side-elements ul {
+        align-items: center;
+        /* padding: 3rem; */
+        justify-content: space-around;
+    }
+
+    header .side-elements li {
+        padding: 1.5rem;
+        list-style: none;
+        justify-content: space-around;
+    }
+
+    header .side-elements a {
+        text-decoration: none;
+        justify-content: space-around;
+        /* align-items: flex-start; */
+        color: rgb(245, 238, 235);
+        padding: 1, 5rem;
+        transition: all 0.2s ease-in-out;
+        /* margin-left: 30px; */
+    }
+
+    header .side-elements a:hover {
+        transform: scale(1.4);
+        color: rgb(224, 133, 13);
+    }
+}
+
+@media (max-width: 740px) {
+    header {
+        padding: 12px 20px;
+    }
+    header.sticky {
+        padding: 10px 20px;
+    }
+
+    header .nav-elements {
+        display: none;
+    }
+
+    header .brand {
+        margin-left: -1px;
+        /* padding: 2rem; */
+        transition: transform 0.3s ease-in-out;
+    }
+}
