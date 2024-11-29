@@ -1,0 +1,72 @@
+/* **************** WORK *********************** */
+
+.work {
+    background: #000016a9;
+}
+
+.work .content {
+    /* width: 500px; */
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.work .content .card {
+    width: 340px;
+    margin: 15px;
+    /* margin-left: -300px; */
+    justify-content: center;
+    align-items: center;
+}
+
+.work .content .card .card-img {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.work .content .card .card-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 0.5s ease;
+}
+
+.work .content .card .card-img img:hover {
+    transform: scale(1.2);
+}
+
+.btn4 {
+    color: rgb(27, 7, 7);
+    border-radius: 2px;
+    background-color: rgb(224, 133, 13);
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.5s ease;
+    width: 120px;
+    /* justify-content: center;
+    align-content: center; */
+
+    margin-top: 20px;
+    /* margin-left: -150px; */
+}
+
+.btn4:hover {
+    background-color: rgb(27, 7, 7);
+    color: rgb(224, 133, 13);
+}

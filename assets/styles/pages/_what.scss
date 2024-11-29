@@ -1,0 +1,112 @@
+/* **************** WHAT *********************** */
+
+.what .content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-top: 20px;
+    width: 340px;
+}
+
+.title p {
+    font-size: 1em;
+    width: 90%;
+}
+
+.what .content .card {
+    background: cornsilk;
+    width: 340px;
+    margin: 10px;
+    margin-left: -175px;
+    padding: 25px;
+    display: flex;
+    /* justify-content:left ;
+    align-items: center; */
+    flex-direction: column;
+    box-shadow: 0 5px 25px rgba(1 1 1 / 15%);
+    border-radius: 10px;
+}
+
+.what .content .card .service-icon {
+    color: rgba(255, 163, 88, 0.876);
+    font-size: 8em;
+    text-align: center;
+    transition: 0.5s ease;
+}
+
+.what .content .card:hover .service-icon {
+    transform: translateY(-10px);
+}
+
+.what .content .card .info {
+    text-align: center;
+}
+
+.what .content .card .info h3 {
+    color: rgba(255, 163, 88, 0.876);
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+}
+
+@media (max-width: 1120px) {
+    /* ***********WHAT < 1120 ******************* */
+
+    .title p {
+        /* font-size: 1em; */
+        /* width: 100%; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .what .content .card {
+        /* background: cornsilk;
+ width: 340px;
+ margin: 10px; */
+        margin-left: -150px;
+        /* display: grid;
+  justify-content: center;
+ align-items: center; */
+    }
+}
+
+@media (maxx-width: 1080px) {
+    /**********WHAT < 1080 *************/
+    .what .content .card {
+        /* margin-right: 10px; */
+        display: flex;
+    }
+}
+
+@media (max-width: 740px) {
+    /* ************* WHAT < 740 ************** */
+
+    .what .content .card {
+        background: cornsilk;
+        width: 340px;
+        margin: 10px;
+        margin-left: 150px;
+    }
+}
+
+@media (max-width: 520px) {
+    /* ************* WHAT < 520px *********************** */
+
+    .what .content .card {
+        background: cornsilk;
+        width: 300px;
+        margin: 10px;
+        margin-left: 80px;
+    }
+}
+
+@media (max-width: 377px) {
+    /**********WHAT < 377px *************/
+    .what .content .card {
+        /* margin-right: 10px; */
+        /* display: flex; */
+        margin: auto;
+    }
+}
